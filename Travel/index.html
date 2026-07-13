@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TravelBuddy - Discover breathtaking destinations around the world. Plan your dream vacation with curated travel experiences."
+    />
+    <title>TravelBuddy — Explore The World</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo"
+          ><img src="logo.png" alt="TravelBuddy" /> TravelBuddy</a
+        >
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html"><button class="nav-btn">Sign In</button></a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content fade-up">
+        <span class="hero-badge">✈ No.1 Travel Platform</span>
+        <h1>Discover Your Next <span>Adventure</span></h1>
+        <p>
+          Explore stunning destinations, curated experiences, and unforgettable
+          journeys tailored just for you.
+        </p>
+        <div class="hero-buttons">
+          <a href="destinations.html" class="btn-primary"
+            >Explore Destinations</a
+          >
+          <a href="about.html" class="btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <h3 id="statDest">500+</h3>
+            <p>Destinations</p>
+          </div>
+          <div class="stat">
+            <h3 id="statTravelers">50K+</h3>
+            <p>Happy Travelers</p>
+          </div>
+          <div class="stat">
+            <h3 id="statYears">12+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED DESTINATIONS -->
+    <section id="featured">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="badge">Popular Picks</span>
+          <h2>Featured Destinations</h2>
+          <p>
+            Hand-picked destinations loved by our community of travelers
+            worldwide.
+          </p>
+        </div>
+        <div class="destinations-grid" id="featuredGrid">
+          <!-- Filled by JS -->
+        </div>
+        <div style="text-align: center; margin-top: 40px">
+          <a href="destinations.html" class="btn-outline"
+            >View All Destinations →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES / WHY CHOOSE US -->
+    <section id="features" style="background: var(--bg-secondary)">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="badge">Why TravelBuddy</span>
+          <h2>Why Travel With Us</h2>
+          <p>We make every journey seamless, safe, and truly unforgettable.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card fade-up">
+            <div class="feature-icon">🌍</div>
+            <h3>500+ Destinations</h3>
+            <p>
+              From hidden gems to iconic landmarks, explore destinations across
+              every continent.
+            </p>
+          </div>
+          <div class="feature-card fade-up">
+            <div class="feature-icon">🏷️</div>
+            <h3>Best Price Guarantee</h3>
+            <p>
+              Get the most competitive prices with our price-match promise on
+              every booking.
+            </p>
+          </div>
+          <div class="feature-card fade-up">
+            <div class="feature-icon">🛡️</div>
+            <h3>Safe & Secure</h3>
+            <p>
+              Travel with confidence knowing every trip is backed by our safety
+              commitment.
+            </p>
+          </div>
+          <div class="feature-card fade-up">
+            <div class="feature-icon">📞</div>
+            <h3>24/7 Support</h3>
+            <p>
+              Our dedicated team is available around the clock to assist you
+              anywhere in the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter">
+      <div class="container">
+        <div class="newsletter fade-up">
+          <h2>Get Travel Inspiration</h2>
+          <p>
+            Subscribe to our newsletter and receive exclusive deals, tips, and
+            destination guides.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+              id="newsletterEmail"
+            />
+            <button type="submit" class="btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="index.html" class="nav-logo"
+              ><img src="logo.png" alt="TravelBuddy" /> TravelBuddy</a
+            >
+            <p>
+              Your ultimate travel companion since 2026. Your journey, our
+              passion.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="destinations.html">Destinations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 TravelBuddy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact TravelBuddy - Get in touch with our travel experts for bookings, support, or partnerships.">
+  <title>Contact Us — TravelBuddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="TravelBuddy"> TravelBuddy</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html"><button class="nav-btn">Sign In</button></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get In <span style="color:var(--accent)">Touch</span></h1>
+      <p>Have a question or need help planning your dream trip? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="contact-grid fade-up">
+        <div>
+          <div class="contact-info-card">
+            <div class="icon">📍</div>
+            <div><h4>Our Office</h4><p>123 Explorer Avenue, Suite 400<br>San Francisco, CA 94102</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📧</div>
+            <div><h4>Email Us</h4><p>hello@wanderlust.com<br>support@wanderlust.com</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📞</div>
+            <div><h4>Call Us</h4><p>+1 (555) 123-4567<br>Mon-Fri, 9AM - 6PM PST</p></div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">💬</div>
+            <div><h4>Live Chat</h4><p>Available 24/7 for instant support<br>Average response: under 2 minutes</p></div>
+          </div>
+        </div>
+        <div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject">
+                <option>General Inquiry</option>
+                <option>Booking Support</option>
+                <option>Partnership</option>
+                <option>Feedback</option>
+                <option>Press & Media</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="contactSubmitBtn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelBuddy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

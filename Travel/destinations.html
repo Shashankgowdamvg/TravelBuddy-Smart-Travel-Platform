@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore all destinations - Find your perfect getaway from beaches to mountains, cities to islands.">
+  <title>Destinations — TravelBuddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="TravelBuddy"> TravelBuddy</a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html"><button class="nav-btn">Sign In</button></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Explore <span style="color:var(--accent)">Destinations</span></h1>
+      <p>Discover incredible places around the globe. Filter by category to find your perfect escape.</p>
+    </div>
+  </section>
+
+  <!-- FILTER + GRID -->
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="filter-bar fade-up" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="beach">🏖 Beach</button>
+        <button class="filter-btn" data-filter="mountain">🏔 Mountain</button>
+        <button class="filter-btn" data-filter="city">🏙 City</button>
+        <button class="filter-btn" data-filter="island">🌴 Island</button>
+        <button class="filter-btn" data-filter="cultural">🏛 Cultural</button>
+      </div>
+      <div class="destinations-grid" id="allDestGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="nav-logo"><img src="logo.png" alt="TravelBuddy"> TravelBuddy</a>
+          <p>Your ultimate travel companion since 2026. Your journey, our passion.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="destinations.html">Destinations</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelBuddy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

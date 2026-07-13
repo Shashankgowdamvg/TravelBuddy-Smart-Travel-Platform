@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Destination details - Explore activities, gallery, highlights and book your trip."
+    />
+    <title>Destination Details — TravelBuddy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+      <div class="container">
+        <a href="index.html" class="nav-logo"
+          ><img src="logo.png" alt="TravelBuddy" /> TravelBuddy</a
+        >
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="destinations.html" class="active">Destinations</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html"><button class="nav-btn">Sign In</button></a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- DETAIL HERO -->
+    <div class="detail-hero" id="detailHero">
+      <img src="" alt="" id="detailHeroImg" />
+      <div class="detail-hero-content">
+        <div class="container">
+          <span class="hero-badge" id="detailBadge"></span>
+          <h1 id="detailTitle" style="font-size: clamp(2rem, 5vw, 3.5rem)"></h1>
+          <p
+            id="detailLocation"
+            style="color: var(--text-muted); font-size: 1.05rem"
+          >
+            <i class="fas fa-map-marker-alt" style="color: var(--accent)"></i>
+            <span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETAIL CONTENT -->
+    <section style="padding-top: 20px">
+      <div class="container">
+        <div class="detail-content">
+          <div class="detail-main" id="detailMain">
+            <h2>About This Destination</h2>
+            <p id="detailDesc"></p>
+
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid"></div>
+
+            <h2>Trip Highlights</h2>
+            <ul class="highlights-list" id="highlightsList"></ul>
+          </div>
+          <div class="detail-sidebar">
+            <div class="booking-card">
+              <p style="color: var(--text-muted); font-size: 0.85rem">
+                Starting from
+              </p>
+              <div class="price" id="detailPrice">₹0 <span>/ person</span></div>
+              <div class="form-group">
+                <label>Check-in Date</label>
+                <input type="date" id="checkinDate" />
+              </div>
+              <div class="form-group">
+                <label>Guests</label>
+                <select id="guestsSelect">
+                  <option>1 Guest</option>
+                  <option>2 Guests</option>
+                  <option>3 Guests</option>
+                  <option>4 Guests</option>
+                  <option>5+ Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Duration</label>
+                <input type="text" id="detailDuration" readonly />
+              </div>
+              <button
+                class="btn-primary"
+                style="width: 100%; margin-top: 12px"
+                id="bookNowBtn"
+              >
+                Book Now
+              </button>
+              <button
+                class="btn-outline"
+                style="width: 100%; margin-top: 12px; display: none"
+                id="downloadInvoiceBtn"
+              >
+                <i class="fas fa-file-pdf" style="margin-right: 8px"></i>
+                Download Invoice
+              </button>
+              <button
+                class="btn-outline"
+                style="
+                  width: 100%;
+                  margin-top: 12px;
+                  display: none;
+                  color: #ef4444;
+                  border-color: #ef4444;
+                "
+                id="cancelBookingBtn"
+              >
+                <i class="fas fa-times-circle" style="margin-right: 8px"></i>
+                Cancel Booking
+              </button>
+              <p
+                style="
+                  text-align: center;
+                  font-size: 0.8rem;
+                  color: var(--text-muted);
+                  margin-top: 12px;
+                "
+              >
+                Free cancellation up to 48 hours before
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 TravelBuddy. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
