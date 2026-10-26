@@ -4,7 +4,7 @@ TravelBuddy is a responsive travel website that helps users explore beautiful de
 
 ---
 
-## 📖 About the Project
+## 📖 About the Project 
 
 TravelBuddy is a front-end travel website developed to provide users with an engaging platform for exploring destinations and travel services. The website features a responsive design, interactive user interface, and intuitive navigation to ensure a seamless browsing experience. It demonstrates the effective use of modern web development techniques to create an attractive and functional travel platform.
 
