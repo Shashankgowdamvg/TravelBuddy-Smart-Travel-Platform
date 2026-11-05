@@ -11,7 +11,7 @@ TravelBuddy is a front-end travel website developed to provide users with an eng
 ---
 
 ## ✨ Features
-
+ 
 - 🏠 Responsive Home Page 
 - 🌍 Explore Popular Destinations
 - 📦 Travel Packages
