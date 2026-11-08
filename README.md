@@ -1,5 +1,5 @@
 # 🌍 TravelBuddy
-
+ 
 TravelBuddy is a responsive travel website that helps users explore beautiful destinations, discover exciting travel packages, and plan memorable journeys. Built using **HTML5, CSS3, and JavaScript**, the project delivers a modern, visually appealing, and user-friendly experience across all devices.
 
 ---
